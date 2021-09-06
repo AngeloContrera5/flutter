@@ -1,0 +1,11 @@
+galeriaToAdd() {
+  galeriaToAdd = {
+    "objeto": objetoController.text,
+    "lugar": lugarController.text,
+  };
+
+  collectionReference.add(galeriaToAdd);
+}
+
+
+CollectionReference collectionReference = firestore.collection("galeria");
